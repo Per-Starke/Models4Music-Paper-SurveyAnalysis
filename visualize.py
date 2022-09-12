@@ -174,9 +174,9 @@ make_plot(pd.concat([df['DeepBach_creative'], df['DeepBach_creative_2']]), 'Woul
 """
 
 # Plot Before and After reading the definition, combined
-#"""
+"""
 make_plot(pd.concat([df['Amper_creative'], df['DeepBach_creative']]), 'Before')
 make_plot(pd.concat([df['Amper_creative_2'], df['DeepBach_creative_2']]), 'After')
-#"""
+"""
 
 plt.show()
