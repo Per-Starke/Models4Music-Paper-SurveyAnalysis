@@ -55,6 +55,7 @@ ax_age.set_title('Agegroups')
 
 # Plot the answers, by gender
 
+"""
 make_plot(df_males['Amper_creative'], 'Would you call the Amper-AI "Creative"? - Males')
 make_plot(df_males['DeepBach_creative'], 'Would you call the DeepBach-AI "Creative"? - Males')
 make_plot(df_males['Creativity_definition_agreement'], 'Would you agree with this definition of "Creativity"? - Males')
@@ -74,7 +75,7 @@ make_plot(df_other_gender['Creativity_definition_agreement'], 'Would you agree w
                                                               '- Other gender')
 make_plot(df_other_gender['Amper_creative_2'], 'Would you call the Amper-AI "Creative"? - Other gender - After')
 make_plot(df_other_gender['DeepBach_creative_2'], 'Would you call the DeepBach-AI "Creative"? - Other gender- After')
-
+"""
 
 # Plot the answers, by age group
 """
@@ -155,5 +156,13 @@ make_plot(df_no_it['Creativity_definition_agreement'], 'Would you agree with thi
 make_plot(df_no_it['Amper_creative_2'], 'Would you call the Amper-AI "Creative"? - No IT-Expertise - After')
 make_plot(df_no_it['DeepBach_creative_2'], 'Would you call the DeepBach-AI "Creative"? - No IT-Expertise - After')
 """
+
+# Plot the answers, for all participants
+make_plot(df['Amper_creative'], 'Would you call the Amper-AI "Creative"?')
+make_plot(df['DeepBach_creative'], 'Would you call the DeepBach-AI "Creative"?')
+make_plot(df['Creativity_definition_agreement'], 'Would you agree with this definition of "Creativity"?')
+make_plot(df['Amper_creative_2'], 'Would you call the Amper-AI "Creative"? - After')
+make_plot(df['DeepBach_creative_2'], 'Would you call the DeepBach-AI "Creative"? - After')
+
 
 plt.show()
