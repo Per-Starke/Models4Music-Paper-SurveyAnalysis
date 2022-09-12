@@ -2,6 +2,7 @@
 __author__ = "Per Starke"
 
 import matplotlib.pyplot as plt
+import pandas as pd
 from group_answers import *
 
 
@@ -158,11 +159,18 @@ make_plot(df_no_it['DeepBach_creative_2'], 'Would you call the DeepBach-AI "Crea
 """
 
 # Plot the answers, for all participants
+"""
 make_plot(df['Amper_creative'], 'Would you call the Amper-AI "Creative"?')
 make_plot(df['DeepBach_creative'], 'Would you call the DeepBach-AI "Creative"?')
 make_plot(df['Creativity_definition_agreement'], 'Would you agree with this definition of "Creativity"?')
 make_plot(df['Amper_creative_2'], 'Would you call the Amper-AI "Creative"? - After')
 make_plot(df['DeepBach_creative_2'], 'Would you call the DeepBach-AI "Creative"? - After')
+"""
 
+# Plot Amper and DeepBach combined
+"""
+make_plot(pd.concat([df['Amper_creative'], df['Amper_creative_2']]), 'Would you call the Amper-AI "Creative"?')
+make_plot(pd.concat([df['DeepBach_creative'], df['DeepBach_creative_2']]), 'Would you call the DeepBach-AI "Creative"?')
+"""
 
 plt.show()
